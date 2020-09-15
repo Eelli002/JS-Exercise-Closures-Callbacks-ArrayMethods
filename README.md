@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks until your tests are passing.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+If a variable is not described in the functions scope, the function will look outside the scope chain and search for a variable being referenced in the outer scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+The closure is in the console.log statement because it exrtrapolates the data from the variables dansroll and zoesroll. You can tell because these variables are not in the function scope.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The number gernerated will change but the name will stay the same.
+
 c. What is the lexical scope of `newRoll`? 
+
+The lexical scope of newRoll is the variable with dansRoll and zoesRoll.
 
 ### Task 3 - Stretch Goals
 
